@@ -1,0 +1,572 @@
+/* Core layout and typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+    
+    background-color: #e6f3ff;  /* Changed to light blue */
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001;  /* Added z-index higher than the side nav and overlay */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-brand {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-brand img {
+    height: 40px;
+    width: auto;
+}
+
+.brand-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.brand-tagline {
+    font-size: 0.9rem;
+}
+
+nav a {
+    color: #333;  /* Changed to dark gray for better contrast */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #666;  /* Updated hover color to match new theme */
+}
+
+/* Main content */
+.hero {
+    margin-top: 6rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-text {
+    flex: 1;
+    order: 1;
+}
+
+.hero img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 12px;
+    order: 2;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.hero-text p {
+    margin-bottom: 1.5rem;  /* Added spacing between paragraphs */
+}
+
+.hero-text p:last-child {
+    margin-bottom: 0;  /* Remove margin from last paragraph to avoid extra space */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .nav-brand {
+        margin-right: 0;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .brand-text {
+        align-items: center;
+    }
+
+    .brand-name {
+        font-size: 1rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.8rem;
+    }
+}
+
+/* Content pages */
+.content {
+    margin-top: 4rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex: 1;
+}
+
+.book-call {
+    background-color: #007bff;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.book-call:hover {
+    background-color: #0056b3;
+    color: white !important;
+}
+
+/* Table styles */
+.audience-table-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+.audience-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: #f5f9ff;  /* Light blue background matching header */
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.audience-table th {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 2rem;
+    color: #333;
+    font-weight: 600;
+    background: #e8f1ff;  /* Slightly darker blue for header */
+}
+
+.audience-table td {
+    vertical-align: top;
+    padding: 2rem;
+    border-top: 1px solid #e0e9f7;
+}
+
+.audience-table ul {
+    list-style: disc;  /* Changed from 'none' to 'disc' for bullets */
+    padding-left: 1.2rem;  /* Added left padding for bullets */
+    margin: 0;
+}
+
+.audience-table li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding-left: 0.3rem;  /* Added small padding after bullet */
+}
+
+.audience-table li:last-child {
+    margin-bottom: 0;
+}
+
+.audience-table a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.audience-table a:hover {
+    text-decoration: underline;
+}
+
+/* Subheader styles */
+.section-subheader {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Timeline styles */
+.timeline-section {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+.timeline {
+    position: relative;
+    padding: 2rem 0;
+}
+
+/* New timeline line styling */
+.timeline-line {
+    position: absolute;
+    left: 74px;
+    top: 40px;  /* Align with center of first logo */
+    bottom: 40px;  /* Distance from bottom of last logo */
+    width: 2px;
+    background-color: #e0e9f7;
+}
+
+/* Timeline and table animations */
+.timeline-item, table tr {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Add delay for table rows to create a cascade effect */
+table tr:nth-child(1) { transition-delay: 0s; }
+table tr:nth-child(2) { transition-delay: 0.1s; }
+table tr:nth-child(3) { transition-delay: 0.2s; }
+table tr:nth-child(4) { transition-delay: 0.3s; }
+table tr:nth-child(5) { transition-delay: 0.4s; }
+
+.timeline-item.visible, table tr.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Ensure table display properties are maintained */
+table tr {
+    display: table-row;
+}
+
+.timeline-logo {
+    width: 150px;  /* Increased to 150px (3x50) */
+    height: 50px;  /* Increased to 50px */
+    border-radius: 0;
+    margin-right: 2rem;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.timeline-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.timeline-content {
+    flex: 1;
+    padding-top: 0.2rem;  /* Aligns content with logo center */
+}
+
+.timeline-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.timeline-content h3 .degree {
+    font-weight: normal;
+    color: #666;
+}
+
+.timeline-content p {
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-period {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1030px) {
+    .timeline::before {
+        left: 74px;  /* Match new logo center position */
+    }
+    
+    .timeline-item {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Hamburger menu button */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+/* Side navigation menu - updated styles */
+.side-nav {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #e6f3ff;
+    padding: 2rem;
+    transition: 0.3s;
+    z-index: 1002;
+}
+
+.side-nav.active {
+    right: 0;
+}
+
+.side-nav .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-top: 3rem; /* Add space below close button */
+}
+
+.side-nav .nav-links li {
+    width: 100%;
+}
+
+.side-nav .nav-links a {
+    display: block;
+    padding: 0.5rem 0;
+    color: #666; /* Match main navigation gray color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.side-nav .nav-links a:hover {
+    color: #333; /* Match main navigation hover color */
+}
+
+.side-nav .nav-links a.book-call {
+    display: inline-block;
+    padding: 0.5rem 1rem;  /* Match the padding of other book-call buttons */
+    width: auto;
+}
+
+/* Close button styling */
+.side-nav .close-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: none;
+    border: none;
+    font-size: 3rem;  /* Changed from 1.5rem to 3rem */
+    cursor: pointer;
+    color: #000;
+    padding: 0;
+}
+
+/* Book call button in side nav - move to top */
+.side-nav .book-call-container {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.side-nav .book-call {
+    /* Inherit existing book-call button styles */
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* Overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Update responsive design */
+@media (max-width: 1030px) {
+    .menu-button {
+        display: block;
+    }
+
+    nav ul .nav-links,
+    nav ul li:not(.nav-brand):not(:last-child) {
+        display: none;
+    }
+
+    nav ul {
+        flex-direction: row;
+        text-align: left;
+        gap: 1rem;
+    }
+
+    .nav-brand {
+        margin-right: auto;
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 0;
+    }
+}
+
+/* Book call button container - centered version */
+.book-call-container {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Override centering for navigation book call */
+nav .book-call-container {
+    text-align: left;
+    margin: 0;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.footer-links a {
+    background-color: #007bff;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    background-color: #0056b3;
+    color: white !important;
+}
+
+/* Special handling for square logos */
+.timeline-logo img[src*="apheris"], 
+.timeline-logo img[src*="go1"] {
+    width: 50px;  /* Increased to 50px */
+    border-radius: 50%;
+    margin: 0 50px;  /* Adjusted margins to center in 150px container */
+}
+
+/* Hide mobile controls by default */
+.mobile-controls {
+    display: none;
+}
+@media (max-width: 1030px) {
+    /* Hide desktop CTA */
+    .cta-button {
+        display: none;
+    }
+
+    /* Show mobile controls */
+    .mobile-controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;  /* This creates space between the button and hamburger menu */
+    }
+
+    .mobile-buttons {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .mobile-buttons .book-call {
+        display: inline-block;
+        background-color: #007bff;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        text-decoration: none;
+    }
+
+    .mobile-buttons .book-call:hover {
+        background-color: #0056b3;
+    }
+}
