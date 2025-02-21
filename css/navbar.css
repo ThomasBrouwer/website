@@ -72,14 +72,30 @@ nav a:hover {
 .book-call {
     background-color: #007bff;
     color: white !important;
-    padding: 0.5rem 1rem;
+    padding: 0.75rem 1.25rem;  /* Increased padding for consistent height */
     border-radius: 4px;
     transition: background-color 0.3s;
-}
+    display: inline-block;  /* Added to ensure consistent rendering */
+    line-height: 1.2;  /* Added to ensure consistent text height */
+} 
 
 .book-call:hover {
     background-color: #0056b3;
     color: white !important;
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-cta {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+    .brand-name {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .brand-tagline {
+        font-size: 0.7rem;
+    }
 }
 
 /* Mobile Navigation */
@@ -222,12 +238,5 @@ nav a:hover {
 
     .mobile-buttons .book-call {
         display: inline-block;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .mobile-cta {
-        font-size: 0.8rem;
-        padding: 0.5em 1em;  /* Optionally reduce padding too */
     }
 }
