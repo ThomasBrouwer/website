@@ -159,6 +159,10 @@ body {
     text-decoration: underline;
 }
 
+.audience-table p {
+    padding: 0.5rem;
+}
+
 /* Subheader styles */
 .section-subheader {
     text-align: center;
