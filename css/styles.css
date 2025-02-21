@@ -65,11 +65,21 @@ body {
 
 /* Content pages */
 .content {
-    margin-top: 4rem;
+    margin-top: 2rem;  /* Reduced from 4rem */
     padding: 2rem;
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.content h2 {
+    margin-top: 0;      /* Remove any top margin */
+    margin-bottom: 1rem;  /* Add some space below the heading */
+}
+
+.content p, 
+.content ul {
+    margin-bottom: 1.5rem;  /* Keep existing spacing for paragraphs and lists */
 }
 
 .nav-links {
@@ -391,10 +401,16 @@ table tr {
     }
 }
 
-/* Book call button container - centered version */
+/* Book call container in main content */
 .book-call-container {
     text-align: center;
-    margin: 2rem auto;
+    margin: 2rem 0;
+    background-color: white;  /* Explicitly set to white */
+}
+
+.book-call-container .footer-links {
+    background-color: white;  /* Override the blue background */
+    justify-content: center;
 }
 
 /* Override centering for navigation book call */
@@ -513,4 +529,16 @@ nav .book-call-container {
 
 .product-coaching-title {
     margin-top: 2rem; /* Adjust this value as needed */
+}
+
+/* Common list styling - but exclude navigation */
+main ul li {  /* Scope to main content area only */
+    margin-bottom: 0.5rem;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+main ul {  /* Scope to main content area only */
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
 }
