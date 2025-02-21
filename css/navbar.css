@@ -224,3 +224,10 @@ nav a:hover {
         display: inline-block;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .mobile-cta {
+        font-size: 0.8rem;
+        padding: 0.5em 1em;  /* Optionally reduce padding too */
+    }
+}
