@@ -10,14 +10,6 @@ body {
     line-height: 1.6;
 }
 
-.nav-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 /* Main content */
 .hero {
     margin-top: 6rem;
@@ -57,16 +49,16 @@ body {
 }
 
 .hero-text p {
-    margin-bottom: 1.5rem;  /* Added spacing between paragraphs */
+    margin-bottom: 1.5rem;
 }
 
 .hero-text p:last-child {
-    margin-bottom: 0;  /* Remove margin from last paragraph to avoid extra space */
+    margin-bottom: 0;
 }
 
 /* Content pages */
 .content {
-    margin-top: 2rem;  /* Reduced from 4rem */
+    margin-top: 2rem;
     padding: 2rem;
     max-width: 1200px;
     margin-left: auto;
@@ -74,33 +66,13 @@ body {
 }
 
 .content h2 {
-    margin-top: 0;      /* Remove any top margin */
-    margin-bottom: 1rem;  /* Add some space below the heading */
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .content p, 
 .content ul {
-    margin-bottom: 1.5rem;  /* Keep existing spacing for paragraphs and lists */
-}
-
-.nav-links {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex: 1;
-}
-
-.book-call {
-    background-color: #007bff;
-    color: white !important;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.book-call:hover {
-    background-color: #0056b3;
-    color: white !important;
+    margin-bottom: 1.5rem;
 }
 
 /* Table styles */
@@ -114,7 +86,7 @@ body {
     width: 100%;
     border-collapse: separate;
     border-spacing: 0;
-    background: #f5f9ff;  /* Light blue background matching header */
+    background: #f5f9ff;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -125,7 +97,7 @@ body {
     padding: 2rem;
     color: #333;
     font-weight: 600;
-    background: #e8f1ff;  /* Slightly darker blue for header */
+    background: #e8f1ff;
 }
 
 .audience-table td {
@@ -135,15 +107,15 @@ body {
 }
 
 .audience-table ul {
-    list-style: disc;  /* Changed from 'none' to 'disc' for bullets */
-    padding-left: 1.2rem;  /* Added left padding for bullets */
+    list-style: disc;
+    padding-left: 1.2rem;
     margin: 0;
 }
 
 .audience-table li {
     margin-bottom: 1rem;
     line-height: 1.6;
-    padding-left: 0.3rem;  /* Added small padding after bullet */
+    padding-left: 0.3rem;
 }
 
 .audience-table li:last-child {
@@ -163,7 +135,7 @@ body {
     padding: 0.5rem;
 }
 
-/* Subheader styles */
+/* Section styles */
 .section-subheader {
     text-align: center;
     font-size: 2rem;
@@ -183,17 +155,15 @@ body {
     padding: 2rem 0;
 }
 
-/* New timeline line styling */
 .timeline-line {
     position: absolute;
     left: 74px;
-    top: 40px;  /* Align with center of first logo */
-    bottom: 40px;  /* Distance from bottom of last logo */
+    top: 40px;
+    bottom: 40px;
     width: 2px;
     background-color: #e0e9f7;
 }
 
-/* Timeline and table animations */
 .timeline-item, table tr {
     display: flex;
     align-items: flex-start;
@@ -204,7 +174,7 @@ body {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Add delay for table rows to create a cascade effect */
+/* Animation delays for table rows */
 table tr:nth-child(1) { transition-delay: 0s; }
 table tr:nth-child(2) { transition-delay: 0.1s; }
 table tr:nth-child(3) { transition-delay: 0.2s; }
@@ -216,14 +186,14 @@ table tr:nth-child(5) { transition-delay: 0.4s; }
     transform: translateY(0);
 }
 
-/* Ensure table display properties are maintained */
+/* Ensure table display properties */
 table tr {
     display: table-row;
 }
 
 .timeline-logo {
-    width: 150px;  /* Increased to 150px (3x50) */
-    height: 50px;  /* Increased to 50px */
+    width: 150px;
+    height: 50px;
     border-radius: 0;
     margin-right: 2rem;
     flex-shrink: 0;
@@ -238,7 +208,7 @@ table tr {
 
 .timeline-content {
     flex: 1;
-    padding-top: 0.2rem;  /* Aligns content with logo center */
+    padding-top: 0.2rem;
 }
 
 .timeline-content h3 {
@@ -262,162 +232,7 @@ table tr {
     color: #888;
 }
 
-/* Responsive adjustments */
-@media (max-width: 1050px) {
-    .timeline::before {
-        left: 74px;  /* Match new logo center position */
-    }
-    
-    .timeline-item {
-        margin-bottom: 1.5rem;
-    }
-}
-
-/* Hamburger menu button */
-.menu-button {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.menu-button span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 5px 0;
-    transition: 0.3s;
-}
-
-/* Side navigation menu - updated styles */
-.side-nav {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    width: 300px;
-    height: 100vh;
-    background-color: #e6f3ff;
-    padding: 2rem;
-    transition: 0.3s;
-    z-index: 1002;
-}
-
-.side-nav.active {
-    right: 0;
-}
-
-.side-nav .nav-links {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 3rem; /* Add space below close button */
-}
-
-.side-nav .nav-links li {
-    width: 100%;
-}
-
-.side-nav .nav-links a {
-    display: block;
-    padding: 0.5rem 0;
-    color: #666; /* Match main navigation gray color */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.side-nav .nav-links a:hover {
-    color: #333; /* Match main navigation hover color */
-}
-
-.side-nav .nav-links a.book-call {
-    display: inline-block;
-    padding: 0.5rem 1rem;  /* Match the padding of other book-call buttons */
-    width: auto;
-}
-
-/* Close button styling */
-.side-nav .close-button {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    background: none;
-    border: none;
-    font-size: 3rem;  /* Changed from 1.5rem to 3rem */
-    cursor: pointer;
-    color: #000;
-    padding: 0;
-}
-
-/* Book call button in side nav - move to top */
-.side-nav .book-call-container {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.side-nav .book-call {
-    /* Inherit existing book-call button styles */
-    display: inline-block;
-    margin: 0 auto;
-}
-
-/* Overlay */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-}
-
-.overlay.active {
-    display: block;
-}
-
-/* Update responsive design */
-/* Book call container in main content */
-.book-call-container {
-    text-align: center;
-}
-
-.book-call-container p {
-    text-align: center;
-}
-
-.book-call-container .footer-links {
-    background-color: white;  /* Override the blue background */
-    justify-content: center;
-}
-
-/* Override centering for navigation book call */
-nav .book-call-container {
-    text-align: left;
-    margin: 0;
-}
-
-/* Special handling for square logos */
-.timeline-logo img[src*="apheris"], 
-.timeline-logo img[src*="go1"] {
-    width: 50px;  /* Increased to 50px */
-    border-radius: 50%;
-    margin: 0 50px;  /* Adjusted margins to center in 150px container */
-}
-
-/* Hide mobile controls by default */
-.mobile-controls {
-    display: none;
-}
-@media (max-width: 1050px) {
-    
-}
-
+/* Coaching styles */
 .coaching-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -442,49 +257,7 @@ nav .book-call-container {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #007bff;
-    color: white;
-    padding: 0.5rem 0.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 0rem;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #0056b3;
-}
-
-@media (max-width: 768px) {
-    .coaching-flex {
-        flex-direction: column;
-    }
-    
-    .coaching-image {
-        order: -1;
-        margin-bottom: 2rem;
-    }
-}
-
-.product-coaching-title {
-    margin-top: 2rem; /* Adjust this value as needed */
-}
-
-/* Common list styling - but exclude navigation */
-main ul li {  /* Scope to main content area only */
-    margin-bottom: 0.5rem;
-    padding-left: 1.5em;
-    text-indent: -1.5em;
-}
-
-main ul {  /* Scope to main content area only */
-    list-style-position: inside;
-    margin-bottom: 1.5rem;
-}
-
+/* Speaking styles */
 .speaking-hero {
     display: flex;
     flex-direction: column;
@@ -495,51 +268,15 @@ main ul {  /* Scope to main content area only */
 .speaking-images {
     display: flex;
     gap: 1rem;
-    order: 1; /* Place images below text in desktop view */
+    order: 1;
 }
 
 .speaking-images img {
     height: 225px;
-    width: auto !important; /* Override any existing width restrictions */
-    max-width: none !important; /* Override the hero img max-width */
+    width: auto !important;
+    max-width: none !important;
     object-fit: contain;
     border-radius: 12px;
-}
-
-.speaking-hero .hero-text {
-    order: 1;
-}
-
-/* Add media query for mobile screens */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: left;
-    }
-    
-    .hero img {
-        order: -1;
-        max-width: 80% !important;
-        margin: 0 auto;
-        border-radius: 12px;  /* Added to ensure rounded corners in mobile */
-    }
-
-    .speaking-hero .hero-text {
-        order: -1;
-    }
-
-    .speaking-images {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .speaking-images img {
-        max-width: 70% !important;
-        height: auto;  /* Added to maintain aspect ratio */
-        object-fit: contain;
-        border-radius: 12px !important; 
-        margin-bottom: 1rem; margin-top: 1rem
-    }
 }
 
 /* Contact Form Styles */
@@ -595,4 +332,58 @@ main ul {  /* Scope to main content area only */
     color: #28a745;
     font-weight: bold;
     text-align: center;
+}
+
+/* Common list styling - but exclude navigation */
+main ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5em;
+    text-indent: -1.5em;
+}
+
+main ul {
+    list-style-position: inside;
+    margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: left;
+    }
+    
+    .hero img {
+        order: -1;
+        max-width: 80% !important;
+        margin: 0 auto;
+        border-radius: 12px;
+    }
+
+    .speaking-hero .hero-text {
+        order: -1;
+    }
+
+    .speaking-images {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .speaking-images img {
+        max-width: 70% !important;
+        height: auto;
+        object-fit: contain;
+        border-radius: 12px !important;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .coaching-flex {
+        flex-direction: column;
+    }
+    
+    .coaching-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
 }

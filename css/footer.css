@@ -43,5 +43,19 @@ footer {
 .footer-links a:hover {
     background-color: #0056b3;
     color: white !important;
+}
+
+/* Book call container styles */
+.book-call-container {
+    text-align: center;
+}
+
+.book-call-container p {
+    text-align: center;
+}
+
+.book-call-container .footer-links {
+    background-color: white;
+    justify-content: center;
 } 
 

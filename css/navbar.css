@@ -82,7 +82,7 @@ nav a:hover {
     color: white !important;
 }
 
-/* Hamburger menu button */
+/* Mobile Navigation */
 .menu-button {
     display: none;
     background: none;
@@ -100,7 +100,7 @@ nav a:hover {
     transition: 0.3s;
 }
 
-/* Side navigation menu */
+/* Side Navigation */
 .side-nav {
     position: fixed;
     top: 0;
@@ -161,16 +161,6 @@ nav a:hover {
     padding: 0;
 }
 
-.side-nav .book-call-container {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.side-nav .book-call {
-    display: inline-block;
-    margin: 0 auto;
-}
-
 /* Overlay */
 .overlay {
     display: none;
@@ -187,10 +177,11 @@ nav a:hover {
     display: block;
 }
 
-/* Hide mobile controls by default */
+/* Mobile Styles */
 .mobile-controls {
     display: none;
 }
+
 @media (max-width: 960px) {
     .menu-button {
         display: block;
@@ -231,14 +222,5 @@ nav a:hover {
 
     .mobile-buttons .book-call {
         display: inline-block;
-        background-color: #007bff;
-        color: white;
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-        text-decoration: none;
-    }
-
-    .mobile-buttons .book-call:hover {
-        background-color: #0056b3;
     }
 }
