@@ -333,10 +333,9 @@ main ul {
     }
 }
 
-/* Remove unused styles */
 .timeline-logo img[src*="apheris"], 
 .timeline-logo img[src*="go1"] {
     width: 50px;
     border-radius: 50%;
     margin: 0 50px;
-} /* These specific styles could be generalized */
+}
