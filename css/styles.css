@@ -94,7 +94,7 @@ body {
 .audience-table th {
     text-align: left;
     font-size: 1.2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     color: #333;
     font-weight: 600;
     background: #e8f1ff;
@@ -153,6 +153,7 @@ body {
 .timeline {
     position: relative;
     padding: 2rem 0;
+    margin-left: -2rem;
 }
 
 .timeline-line {
@@ -195,7 +196,7 @@ table tr {
     width: 150px;
     height: 50px;
     border-radius: 0;
-    margin-right: 1rem;
+    margin-right: 0rem;
     flex-shrink: 0;
     z-index: 1;
 }
