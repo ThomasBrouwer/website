@@ -484,15 +484,6 @@ nav .book-call-container {
     margin-top: 2rem;
 }
 
-.coaching-text {
-    flex: 1;
-}
-
-.coaching-image {
-    flex: 1;
-    max-width: 500px;
-}
-
 .coaching-image img {
     width: 100%;
     height: auto;
