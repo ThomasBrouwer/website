@@ -18,63 +18,6 @@ body {
     margin: 0 auto;
 }
 
-/* Navigation */
-nav {
-    
-    background-color: #e6f3ff;  /* Changed to light blue */
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1001;  /* Added z-index higher than the side nav and overlay */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.nav-brand {
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.nav-brand img {
-    height: 40px;
-    width: auto;
-}
-
-.brand-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.brand-name {
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-
-.brand-tagline {
-    font-size: 0.9rem;
-}
-
-nav a {
-    color: #333;  /* Changed to dark gray for better contrast */
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    color: #666;  /* Updated hover color to match new theme */
-}
-
 /* Main content */
 .hero {
     margin-top: 6rem;
@@ -118,43 +61,6 @@ nav a:hover {
 
 .hero-text p:last-child {
     margin-bottom: 0;  /* Remove margin from last paragraph to avoid extra space */
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero img {
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-    }
-
-    .nav-brand {
-        margin-right: 0;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom: 1rem;
-    }
-
-    .brand-text {
-        align-items: center;
-    }
-
-    .brand-name {
-        font-size: 1rem;
-    }
-
-    .brand-tagline {
-        font-size: 0.8rem;
-    }
 }
 
 /* Content pages */
@@ -342,7 +248,7 @@ table tr {
 }
 
 /* Responsive adjustments */
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
     .timeline::before {
         left: 74px;  /* Match new logo center position */
     }
@@ -461,7 +367,7 @@ table tr {
 }
 
 /* Update responsive design */
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
     .menu-button {
         display: block;
     }
@@ -497,32 +403,6 @@ nav .book-call-container {
     margin: 0;
 }
 
-/* Footer styles */
-footer {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.footer-links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.footer-links a {
-    background-color: #007bff;
-    color: white !important;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    background-color: #0056b3;
-    color: white !important;
-}
-
 /* Special handling for square logos */
 .timeline-logo img[src*="apheris"], 
 .timeline-logo img[src*="go1"] {
@@ -535,7 +415,7 @@ footer {
 .mobile-controls {
     display: none;
 }
-@media (max-width: 1030px) {
+@media (max-width: 1050px) {
     /* Hide desktop CTA */
     .cta-button {
         display: none;
@@ -569,4 +449,68 @@ footer {
     .mobile-buttons .book-call:hover {
         background-color: #0056b3;
     }
+}
+
+.coaching-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.coaching-content {
+    margin-top: 2rem;
+}
+
+.coaching-flex {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+
+.coaching-text {
+    flex: 1;
+}
+
+.coaching-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.coaching-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem 0.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .coaching-flex {
+        flex-direction: column;
+    }
+    
+    .coaching-image {
+        order: -1;
+        margin-bottom: 2rem;
+    }
+}
+
+.product-coaching-title {
+    margin-top: 2rem; /* Adjust this value as needed */
 }

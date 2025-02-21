@@ -1,20 +1,34 @@
 /* Footer styles */
-.footer-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+footer {
+    text-align: center;
+    background-color: #e6f3ff;  /* Added to ensure entire footer is blue */
+}
+
+.footer-container {
+    background-color: #e6f3ff;
+    padding: 1rem;
 }
 
 .connect-text {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0rem;
     text-align: center;
+    padding: 2rem;
 }
 
 .button-container {
     display: flex;
     gap: 0.5rem;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    background-color: #e6f3ff;
+    padding-bottom: 2rem;
+    gap: 1rem;
+    justify-content: center;
 }
 
 .footer-links a {
@@ -28,4 +42,6 @@
 
 .footer-links a:hover {
     background-color: #0056b3;
+    color: white !important;
 } 
+
