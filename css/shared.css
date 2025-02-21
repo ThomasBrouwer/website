@@ -1,0 +1,28 @@
+/* New file for shared variables and styles */
+:root {
+    --primary-color: #007bff;
+    --primary-hover: #0056b3;
+    --background-light: #e6f3ff;
+    --text-dark: #333;
+    --text-medium: #666;
+    --max-width: 1200px;
+    --border-radius: 4px;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+}
+
+.button-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-primary:hover {
+    background-color: var(--primary-hover);
+} 

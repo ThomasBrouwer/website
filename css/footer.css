@@ -1,11 +1,10 @@
 /* Footer styles */
 footer {
     text-align: center;
-    background-color: #e6f3ff;  /* Added to ensure entire footer is blue */
+    background-color: #e6f3ff;
 }
 
 .footer-container {
-    background-color: #e6f3ff;
     padding: 1rem;
 }
 
@@ -25,7 +24,6 @@ footer {
 
 .footer-links {
     display: flex;
-    background-color: #e6f3ff;
     padding-bottom: 2rem;
     gap: 1rem;
     justify-content: center;
