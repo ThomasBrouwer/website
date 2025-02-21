@@ -187,8 +187,11 @@ nav a:hover {
     display: block;
 }
 
-/* Mobile-specific styles */
-@media (max-width: 1050px) {
+/* Hide mobile controls by default */
+.mobile-controls {
+    display: none;
+}
+@media (max-width: 960px) {
     .menu-button {
         display: block;
     }
