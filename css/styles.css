@@ -336,7 +336,11 @@ main ul {
 
     .audience-table th {
         text-align: left;
-        font-size: 1rem;
+        font-size: 0.9rem;
+    }
+
+    .audience-table td {
+        font-size: 0.9rem;
     }
 }
 
