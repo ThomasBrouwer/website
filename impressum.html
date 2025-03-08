@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Impressum - Thomas Brouwer</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="/js/navbar.js"></script>
+    <script src="/js/security-headers.js"></script>
+</head>
+<body>
+    <!-- Include the navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <script>
+        // Function to load the navbar
+        fetch('/components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                // Initialize navbar functionality after content is loaded
+                initializeNavbar();
+            });
+    </script>
+
+    <main>
+        <section class="content" style="margin-top: 6rem;">
+            <h1>Impressum</h1>
+            
+            <h2>Angaben gemäß § 5 TMG:</h2>
+            <p>
+                Thomas Brouwer<br>
+                Schrammsweg 19b<br>
+                20249 Hamburg<br>
+                Germany
+            </p>
+            
+            <h2>Kontakt:</h2>
+            <p>
+                E-Mail: contact@thomasbrouwer.com
+            </p>
+            
+            <h2>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</h2>
+            <p>
+                Thomas Brouwer<br>
+                Schrammsweg 19b<br>
+                20249 Hamburg<br>
+                Germany
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer-placeholder"></div>
+    </footer>
+
+    <script>
+        fetch('/components/footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-placeholder').innerHTML = data;
+            });
+    </script>
+</body>
+</html> 

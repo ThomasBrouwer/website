@@ -55,5 +55,22 @@ footer {
 .book-call-container .footer-links {
     background-color: white;
     justify-content: center;
+}
+
+.legal-links {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.legal-links a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-links a:hover {
+    color: #333;
+    text-decoration: underline;
 } 
 
