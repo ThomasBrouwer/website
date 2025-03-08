@@ -60,7 +60,10 @@ footer {
 .legal-links {
     margin-top: 0.5rem;
     font-size: 0.8rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .legal-links a {
