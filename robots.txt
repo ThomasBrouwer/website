@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /components/
+Disallow: /.well-known/
+
+Sitemap: https://thomasbrouwer.com/sitemap.xml 
