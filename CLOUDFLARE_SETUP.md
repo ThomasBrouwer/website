@@ -37,7 +37,7 @@ Log in to your Cloudflare account where your domain (thomasbrouwer.com) is manag
 ### Content-Security-Policy
 - Action: "Set static"
 - Header name: "Content-Security-Policy"
-- Value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://substackapi.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://thomasbrouwer646203.substack.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
+- Value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://substackapi.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'self' https://thomasbrouwer.substack.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self';"
 
 ### Referrer-Policy
 - Action: "Set static"
