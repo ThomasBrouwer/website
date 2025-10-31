@@ -70,7 +70,7 @@ nav a:hover {
 }
 
 .book-call {
-    background-color: #007bff;
+    background-color: #0083b3;
     color: white !important;
     padding: 0.75rem 1.25rem;  /* Increased padding for consistent height */
     border-radius: 4px;
@@ -80,7 +80,7 @@ nav a:hover {
 } 
 
 .book-call:hover {
-    background-color: #0056b3;
+    background-color: #0066b3;
     color: white !important;
 }
 

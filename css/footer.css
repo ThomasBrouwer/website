@@ -30,7 +30,7 @@ footer {
 }
 
 .footer-links a {
-    background-color: #007bff;
+    background-color: #0083b3;
     color: white !important;
     padding: 0.75rem 1.25rem;
     border-radius: 4px;
@@ -39,7 +39,7 @@ footer {
 }
 
 .footer-links a:hover {
-    background-color: #0056b3;
+    background-color: #0066b3;
     color: white !important;
 }
 
