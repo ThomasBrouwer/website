@@ -10,7 +10,7 @@
     <!-- Security Headers -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://substackapi.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://substackapi.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://substackcdn.com https://*.substack.com; connect-src 'self' https://substackapi.com; frame-src 'self' https://substackapi.com https://*.substack.com; object-src 'none'; base-uri 'self'; form-action 'self';">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://substackapi.com https://static.cloudflareinsights.com https://js.supascribe.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://substackapi.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://substackcdn.com https://*.substack.com https://*.supascribe.com; connect-src 'self' https://substackapi.com https://*.supascribe.com; frame-src 'self' https://substackapi.com https://*.substack.com https://*.supascribe.com; object-src 'none'; base-uri 'self'; form-action 'self';">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -46,21 +46,15 @@
                     <li><b>Work-life balance</b> - how can you preserve your mental health and be happier at home & work?</li>
                     <li><b>Building a startup</b> - follow my journey  of building a product!</li>
                 </ul>
-                <p>You can find my five most recent articles below - all articles can be found on <a href="https://thomasbrouwer.substack.com">my Substack</a>. Make sure to <a href="https://thomasbrouwer.substack.com/subscribe">sign up for my newsletter</a> to be the first to receive the next writing!</p>
+                <p>You can find my twelve most recent articles below - all articles can be found on <a href="https://thomasbrouwer.substack.com">my Substack</a>. Make sure to <a href="https://thomasbrouwer.substack.com/subscribe">sign up for my newsletter</a> to be the first to receive the next writing!</p>
             </div>
         </section>
         <section class="content" style="padding-top: 0rem; padding-bottom: 5rem;">
-            <!-- Include https://substackapi.com/feed -->
-            <div id="substack-feed-embed"></div>
-            <script>
-            window.SubstackFeedWidget = {
-                substackUrl: "thomasbrouwer.substack.com",
-                posts: 5,
-                layout: "right",
-                hidden: ["reactions", "comments"]
-            };
-            </script>
-            <script src="https://substackapi.com/embeds/feed.js" async></script>
+            <!-- Feed embed code -->
+            <div data-supascribe-embed-id="786025417918" data-supascribe-feed></div>
+
+            <!-- Supascribe Script -->
+            <script src="https://js.supascribe.com/v1/loader/M8EFn1PqTbd8v4xeRN0Mgu1CPrl1.js" async></script>
             <script>
                 fetch('/components/footer.html')
                     .then(response => response.text())
